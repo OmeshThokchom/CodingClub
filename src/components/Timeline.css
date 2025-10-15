@@ -36,21 +36,22 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -15px;
   background-color: #1a1a1a;
   border: 4px solid #e99b63;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
+  transform: translateX(-50%);
 }
 
 .timeline-item.right::after {
-  left: -16px;
+  left: 10px;
 }
 
 .timeline-content {
   padding: 20px 30px;
-  background-color: #1a1a1a;
+  background-color: transparent;
   position: relative;
   border-radius: 6px;
 }

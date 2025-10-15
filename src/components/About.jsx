@@ -1,6 +1,7 @@
 import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import LaserFlow from './laserFlow';
+import DecryptedText from './decripted_text';
 import './Timeline.css';
 
 const teamMembers = [
@@ -120,7 +121,7 @@ const mentors = [
 const About = () => {
   return (
     <main className="flex lg:mt-20 flex-col items-center justify-between min-h-[calc(90vh-6rem)]">
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.1 }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.3 }}>
         <LaserFlow />
       </div>
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-6xl mx-auto px-4 z-10 mt-[10%] md:mt-[5%] lg:mt-0">
@@ -145,9 +146,15 @@ const About = () => {
                     <div className="w-32 h-32 mb-4">
                       <img src={member.imageUrl} alt={member.name} className="w-full h-full rounded-full object-cover" />
                     </div>
-                    <h3 className="text-xl font-semibold text-center">{member.name}</h3>
-                    <p className="text-gray-400 text-center">{member.role}</p>
-                    <p className="text-gray-500 mt-2 text-center">{member.bio}</p>
+                    <h3 className="text-xl font-semibold text-center">
+                      <DecryptedText text={member.name} animateOn="view" />
+                    </h3>
+                    <p className="text-gray-400 text-center">
+                      <DecryptedText text={member.role} animateOn="view" />
+                    </p>
+                    <p className="text-gray-500 mt-2 text-center">
+                      <DecryptedText text={member.bio} animateOn="view" />
+                    </p>
                     <div className="flex mt-4 space-x-4">
                       <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                         <i className='bx bxl-linkedin-square text-2xl'></i>
@@ -183,9 +190,15 @@ const About = () => {
                     <div className="w-32 h-32 mb-4">
                       <img src={mentor.imageUrl} alt={mentor.name} className="w-full h-full rounded-full object-cover" />
                     </div>
-                    <h3 className="text-xl font-semibold text-center">{mentor.name}</h3>
-                    <p className="text-gray-400 text-center">{mentor.role}</p>
-                    <p className="text-gray-500 mt-2 text-center">{mentor.bio}</p>
+                    <h3 className="text-xl font-semibold text-center">
+                      <DecryptedText text={mentor.name} animateOn="view" />
+                    </h3>
+                    <p className="text-gray-400 text-center">
+                      <DecryptedText text={mentor.role} animateOn="view" />
+                    </p>
+                    <p className="text-gray-500 mt-2 text-center">
+                      <DecryptedText text={mentor.bio} animateOn="view" />
+                    </p>
                     <div className="flex mt-4 space-x-4">
                       <a href={mentor.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                         <i className='bx bxl-linkedin-square text-2xl'></i>
