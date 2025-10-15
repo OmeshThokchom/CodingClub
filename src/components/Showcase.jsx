@@ -6,7 +6,6 @@ const Showcase = () => {
       <div className="media">
         <video src="./coding.mp4" loop autoPlay muted playsInline />
       </div>
-      
 
     </section>
 )
