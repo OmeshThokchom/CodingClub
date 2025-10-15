@@ -133,6 +133,13 @@ const About = () => {
         </p>
 
         <div className="mt-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4">Vision</h2>
+          <p className="text-base sm:text-lg tracking-wider text-gray-400">
+            Our vision is to build a community where every student who wants to code can code, empowered with the right guidance, mentorship, and opportunities. From helping freshers overcome their first coding challenges to supporting seniors in choosing the right competitions and preparing effectively, we aim to make coding accessible, collaborative, and inspiring for all at Royal Global University.
+          </p>
+        </div>
+
+        <div className="mt-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4 text-center">Meet the Team</h2>
           <div className="timeline" data-aos="fade-in">
             {teamMembers.map((member, index) => (
@@ -218,13 +225,6 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4">Vision</h2>
-          <p className="text-base sm:text-lg tracking-wider text-gray-400">
-            Our vision is to build a community where every student who wants to code can code, empowered with the right guidance, mentorship, and opportunities. From helping freshers overcome their first coding challenges to supporting seniors in choosing the right competitions and preparing effectively, we aim to make coding accessible, collaborative, and inspiring for all at Royal Global University.
-          </p>
         </div>
 
         <div className="mt-12">
