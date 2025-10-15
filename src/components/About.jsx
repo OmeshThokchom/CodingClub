@@ -45,7 +45,7 @@ const teamMembers = [
     name: 'Abhinish Musahary',
     role: 'Joint Secretary (B.Tech CSE 3rd Year)',
     bio: 'Assists the secretary in communication, coordination, and follow-ups.',
-    imageUrl: 'https://via.placeholder.com/150',
+    imageUrl: 'src/assets/members/Abinish.png',
     social: {
       linkedin: '#',
       github: '#',
@@ -121,7 +121,7 @@ const mentors = [
 const About = () => {
   return (
     <main className="flex lg:mt-20 flex-col items-center justify-between min-h-[calc(90vh-6rem)]">
-      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.3 }}>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.3 }}>
         <LaserFlow />
       </div>
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-6xl mx-auto px-4 z-10 mt-[10%] md:mt-[5%] lg:mt-0">
@@ -134,7 +134,7 @@ const About = () => {
 
         <div className="mt-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4 text-center">Meet the Team</h2>
-          <div className="timeline">
+          <div className="timeline" data-aos="fade-in">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -178,7 +178,7 @@ const About = () => {
 
         <div className="mt-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4 text-center">Our Mentors</h2>
-          <div className="timeline">
+          <div className="timeline" data-aos="fade-in">
             {mentors.map((mentor, index) => (
               <div
                 key={index}
