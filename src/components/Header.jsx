@@ -36,17 +36,26 @@ const Header = () => {
           {' '}
           Home
         </Link>
-        <Link
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          to="/about"
-        >
-          {' '}
-          About Us
-        </Link>
-      </nav>
+                  <Link
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+                    to="/about"
+                  >
+                    {' '}
+                    About Us
+                  </Link>
+                  <Link
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+                    to="/orientation"
+                  >
+                    {' '}
+                    Orientation
+                  </Link>      </nav>
 
       <button className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-white cursor-pointer z-50">
         Join The Club{' '}
@@ -78,6 +87,13 @@ const Header = () => {
           >
             {' '}
             About Us
+          </Link>
+          <Link
+            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
+            to="/orientation"
+          >
+            {' '}
+            Orientation
           </Link>
         </nav>
       </div>

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-semibold mb-4">Quantum Developer’s Club</h3>
+            <h3 className="text-2xl font-semibold mb-4">CodeHive Developer’s Club</h3>
             <p className="text-gray-400">
               Our Motto: “Learn, Build, Evolve, Together”
             </p>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-          <p>&copy; {year} Quantum Developer’s Club. All Rights Reserved.</p>
+          <p>&copy; {year} CodeHive Developer’s Club. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

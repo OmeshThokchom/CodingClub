@@ -126,7 +126,7 @@ const About = () => {
       </div>
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-6xl mx-auto px-4 z-10 mt-[10%] md:mt-[5%] lg:mt-0">
         <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider my-8 text-center'>
-          Quantum Developer’s Club
+          CodeHive Developer’s Club
         </h1>
         <p className='text-base sm:text-lg tracking-wider text-gray-400 text-center'>
           Our Motto: “Learn, Build, Evolve, Together”
