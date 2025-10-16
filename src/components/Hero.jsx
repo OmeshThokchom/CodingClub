@@ -7,28 +7,26 @@ const hero = () => {
         <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-xl ml-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0">
             <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
                 <div className='absolute inset-[3px] bg-black rounded-full flex items-center justify-center gap-1' >
-                    <i class='bx bx-diamond'></i>INTODUCING
+                    <i class='bx bx-diamond'></i>CODE HIVE
 
                 </div>
             </div>
 
             <h1 className='text-3xl sm:text-4x1 md:text-5x1 lg:text-6xl font-semibold tracking-wider my-8'>
-              EMAIL FOR
-              <br/>
-              DEVELOPERS
+              CODE HIVE
             </h1>
             <p className='text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>
-              the shdgc hzdc gsvci asugvci aduysvgc asuhcv agsdvcig sgdvih hgsVCGHSVDC SVCGHVDSAY hsdvh uysadghs hsdbhabjdoisnhbsa shbdvuhsoab shdbvoahsbd asuvgaouh shbdcvhsda ksghvdCKgvdscs sdcguks ysdbcuhsd shdcb usdgch iugshd cisudchisudch sudhciusd usdh c sh udhuch usdh. usdhcjsd usdhcjsd usdhcisd cu dscsdchusdchsd usdhcsd cusdhc sdc ushdc. usdhcisduc. ushciuhcuha auhvauhi ajdfvohdshvo. dfuvhiduhv udfhvuidfhv iudfvhdf v duhfviudhv dufhvdf v......
+              Our vision is to build a community where every student who wants to code can code, empowered with the right guidance, mentorship, and opportunities. From helping freshers overcome their first coding challenges to supporting seniors in choosing the right competitions and preparing effectively, we aim to make coding accessible, collaborative, and inspiring for all at Royal Global University.
             </p>
 
             <div className='flex gap-4 mt-12'>
 
               <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a]' href='#'>
-                Documentation <i className='bx bx-link-external'></i>
+                Our Vision <i className='bx bx-link-external'></i>
               </a>
 
               <a className='border border-[#2a2a2a] py-2 sm:py-3 px-4 sm:px-5 rounded-full sm:text-lg text-sm font-semibold tracking-wider transition-all duration-300 hover:bg-[#1a1a1a] ' href='#'>
-                GetStarted <i className='bx bx-link-external'></i>
+                Join Us <i className='bx bx-link-external'></i>
               </a>
 
 
