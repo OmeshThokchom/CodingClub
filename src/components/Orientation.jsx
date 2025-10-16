@@ -49,60 +49,75 @@ const Orientation = () => {
           </p>
         </div>
 
-        {/* Quest Map: The Agenda */}
-        <div className="quest-map-agenda my-12 w-full max-w-4xl mx-auto">
-          <h3 className="text-3xl font-semibold text-center mb-6" data-aos="fade-down">
-            QUEST MAP: THE AGENDA
+        {/* Timeline Infographic */}
+        <div className="timeline-infographic my-12">
+          <h3 className="text-3xl font-semibold text-center mb-12" data-aos="fade-down">
+            CLUB JOURNEY
           </h3>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-gray-800 rounded-lg shadow-lg">
-              <thead>
-                <tr className="bg-gray-700 text-left text-gray-300 uppercase text-sm leading-normal">
-                  <th className="py-3 px-6">Time</th>
-                  <th className="py-3 px-6">Mission</th>
-                  <th className="py-3 px-6">Description</th>
-                  <th className="py-3 px-6">XP</th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-200 text-sm font-light">
-                <tr className="border-b border-gray-700 hover:bg-gray-900" data-aos="fade-up">
-                  <td className="py-3 px-6 whitespace-nowrap">10:00 - 10:10 AM</td>
-                  <td className="py-3 px-6"><i class='bx bx-chevrons-right'></i> Kickstart the Hive</td>
-                  <td className="py-3 px-6">Opening Address by the President - Vision Unlocked!</td>
-                  <td className="py-3 px-6">+10</td>
-                </tr>
-                <tr className="border-b border-gray-700 hover:bg-gray-900" data-aos="fade-up" data-aos-delay="100">
-                  <td className="py-3 px-6 whitespace-nowrap">10:10 - 10:40 AM</td>
-                  <td className="py-3 px-6"><i class='bx bx-group'></i> The Open House Talks</td>
-                  <td className="py-3 px-6">Three speakers - Three perspectives, One conversation on tech and creativity</td>
-                  <td className="py-3 px-6">+25</td>
-                </tr>
-                <tr className="border-b border-gray-700 hover:bg-gray-900" data-aos="fade-up" data-aos-delay="200">
-                  <td className="py-3 px-6 whitespace-nowrap">10:40 - 10:50 AM</td>
-                  <td className="py-3 px-6"><i class='bx bx-user-voice'></i> Meet the Core Team</td>
-                  <td className="py-3 px-6">Discover the minds behind the hive and their roles.</td>
-                  <td className="py-3 px-6">+10</td>
-                </tr>
-                <tr className="border-b border-gray-700 hover:bg-gray-900" data-aos="fade-up" data-aos-delay="300">
-                  <td className="py-3 px-6 whitespace-nowrap">10:50 - 11:10 AM</td>
-                  <td className="py-3 px-6"><i class='bx bx-rocket'></i> Official Launch Reveal</td>
-                  <td className="py-3 px-6">Lights, music & the moment we'll remember!</td>
-                  <td className="py-3 px-6">+30</td>
-                </tr>
-                <tr className="border-b border-gray-700 hover:bg-gray-900" data-aos="fade-up" data-aos-delay="400">
-                  <td className="py-3 px-6 whitespace-nowrap">11:10 - 11:30 AM</td>
-                  <td className="py-3 px-6"><i class='bx bx-bulb'></i> Future Buzz</td>
-                  <td className="py-3 px-6">Explore our roadmap - workshops, hackathons, and coding times.</td>
-                  <td className="py-3 px-6">+30</td>
-                </tr>
-                <tr className="hover:bg-gray-900" data-aos="fade-up" data-aos-delay="500">
-                  <td className="py-3 px-6 whitespace-nowrap">11:50 - 12:00 PM</td>
-                  <td className="py-3 px-6"><i class='bx bx-network-chart'></i> Networking Arena</td>
-                  <td className="py-3 px-6">Talks - Connect - Ask - Collaborate.</td>
-                  <td className="py-3 px-6">+15</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="timeline-container">
+            {[
+              {
+                year: '2025',
+                time: '10:00 - 10:10 AM',
+                title: 'Kickstart the Hive',
+                description: 'Opening Address by the President - Vision Unlocked!',
+                icon: 'bx bx-rocket',
+                xp: '+10',
+              },
+              {
+                year: '2025',
+                time: '10:10 - 10:40 AM',
+                title: 'The Open House Talks',
+                description: 'Three speakers - Three perspectives, One conversation on tech and creativity',
+                icon: 'bx bx-group',
+                xp: '+25',
+              },
+              {
+                year: '2025',
+                time: '10:40 - 10:50 AM',
+                title: 'Meet the Core Team',
+                description: 'Discover the minds behind the hive and their roles.',
+                icon: 'bx bx-user-voice',
+                xp: '+10',
+              },
+              {
+                year: '2025',
+                time: '10:50 - 11:10 AM',
+                title: 'Official Launch Reveal',
+                description: 'Lights, music & the moment we\'ll remember!',
+                icon: 'bx bx-trophy',
+                xp: '+30',
+              },
+              {
+                year: '2025',
+                time: '11:10 - 11:30 AM',
+                title: 'Future Buzz',
+                description: 'Explore our roadmap - workshops, hackathons, and coding times.',
+                icon: 'bx bx-bulb',
+                xp: '+30',
+              },
+              {
+                year: '2025',
+                time: '11:50 - 12:00 PM',
+                title: 'Networking Arena',
+                description: 'Talks - Connect - Ask - Collaborate.',
+                icon: 'bx bx-network-chart',
+                xp: '+15',
+              },
+            ].map((event, index) => (
+              <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+                <div className="timeline-content" data-aos="fade-up">
+                  <div className="timeline-year-time">
+                    <span className="timeline-year">{event.year}</span>
+                    <span className="timeline-time">{event.time}</span>
+                  </div>
+                  <div className="timeline-icon"><i className={event.icon}></i></div>
+                  <h4 className="timeline-title">{event.title}</h4>
+                  <p className="timeline-description">{event.description}</p>
+                  <div className="timeline-xp">{event.xp} XP</div>
+                </div>
+              </div>
+            ))}
           </div>
           <div className="total-xp-section text-center mt-6 text-xl font-semibold" data-aos="fade-up" data-aos-delay="600">
             <p>Total XP: 110 — Level Up UNLOCKED! <i class='bx bx-trophy'></i> Build Unlocked!</p>
