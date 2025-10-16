@@ -7,32 +7,8 @@ import './Timeline.css';
 const teamMembers = [
   {
     name: 'Prince Gupta',
-    role: 'President (B.Tech CSE 3rd Year)',
-    bio: 'Leads the club, sets the vision, and oversees all activities.',
-    imageUrl: 'https://via.placeholder.com/150',
-    social: {
-      linkedin: '#',
-      github: '#',
-      instagram: '#',
-      twitter: '#',
-    },
-  },
-  {
-    name: 'Sujoy Singha',
-    role: 'Vice President (B.Tech CSE 3rd Year)',
-    bio: 'Supports the president, coordinates teams, and ensures smooth functioning.',
-    imageUrl: 'https://via.placeholder.com/150',
-    social: {
-      linkedin: '#',
-      github: '#',
-      instagram: '#',
-      twitter: '#',
-    },
-  },
-  {
-    name: 'Souman Dey',
-    role: 'Secretary (B.Tech CSE 3rd Year)',
-    bio: 'Manages records, communication, and scheduling for the club.',
+    role: 'President + Public Relations Head',
+    bio: 'Leads the club, sets the vision, and manages public relations.',
     imageUrl: 'https://via.placeholder.com/150',
     social: {
       linkedin: '#',
@@ -43,8 +19,8 @@ const teamMembers = [
   },
   {
     name: 'Abhinish Musahary',
-    role: 'Joint Secretary (B.Tech CSE 3rd Year)',
-    bio: 'Assists the secretary in communication, coordination, and follow-ups.',
+    role: 'Vice President + Technical Head',
+    bio: 'Supports the president and oversees all technical initiatives.',
     imageUrl: 'src/assets/members/Abinish.png',
     social: {
       linkedin: '#',
@@ -54,36 +30,9 @@ const teamMembers = [
     },
   },
   {
-    name: 'Janvi O Kashyap',
-    role: 'Treasurer (B.Tech CSE 2nd Year)',
-    bio: 'Handles finances, budgeting, and maintains transparent accounts.',
-    imageUrl: 'https://via.placeholder.com/150',
-    social: {
-      linkedin: '#',
-      github: '#',
-      instagram: '#',
-      twitter: '#',
-    },
-  },
-  {
     name: 'Jeu Machahary',
-    role: 'Joint Treasurer (B.Tech CSE 2nd Year)',
-    bio: 'Supports the treasurer in managing funds and tracking expenses.',
-    imageUrl: 'https://via.placeholder.com/150',
-    social: {
-      linkedin: '#',
-      github: '#',
-      instagram: '#',
-      twitter: '#',
-    },
-  },
-];
-
-const mentors = [
-  {
-    name: 'Dr Rashel Sarkar',
-    role: 'Mentor (Dept of CSE)',
-    bio: 'Guides the club with his extensive experience in computer science.',
+    role: 'Secretary + Events & Logistics Head',
+    bio: 'Manages records, communication, and coordinates club events.',
     imageUrl: 'https://via.placeholder.com/150',
     social: {
       linkedin: '#',
@@ -93,9 +42,9 @@ const mentors = [
     },
   },
   {
-    name: 'Prof Spandan Barthakur',
-    role: 'Mentor (Dept of CSE)',
-    bio: 'Provides mentorship and support to the club members.',
+    name: 'Sujoy Singha',
+    role: 'Associate Secretary',
+    bio: 'Assists the secretary in communication, coordination, and follow-ups.',
     imageUrl: 'https://via.placeholder.com/150',
     social: {
       linkedin: '#',
@@ -105,9 +54,33 @@ const mentors = [
     },
   },
   {
-    name: 'Bikash Baruah',
-    role: 'Mentor (Dept of CSE)',
-    bio: 'Helps students with their projects and technical skills.',
+    name: 'Dayananda Thokchom',
+    role: 'Project Manager',
+    bio: 'Manages and oversees various club projects.',
+    imageUrl: 'https://via.placeholder.com/150',
+    social: {
+      linkedin: '#',
+      github: '#',
+      instagram: '#',
+      twitter: '#',
+    },
+  },
+  {
+    name: 'Souman Dey',
+    role: 'Design And Media Head',
+    bio: 'Responsible for the club\'s design and media content.',
+    imageUrl: 'https://via.placeholder.com/150',
+    social: {
+      linkedin: '#',
+      github: '#',
+      instagram: '#',
+      twitter: '#',
+    },
+  },
+  {
+    name: 'Janvi O Kashyap',
+    role: 'Treasurer',
+    bio: 'Handles finances, budgeting, and maintains transparent accounts.',
     imageUrl: 'https://via.placeholder.com/150',
     social: {
       linkedin: '#',
@@ -173,50 +146,6 @@ const About = () => {
                         <i className='bx bxl-instagram-alt text-2xl'></i>
                       </a>
                       <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                        <i className='bx bxl-twitter text-2xl'></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wider my-4 text-center">Our Mentors</h2>
-          <div className="timeline" data-aos="fade-in">
-            {mentors.map((mentor, index) => (
-              <div
-                key={index}
-                className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
-                data-aos="fade-up"
-              >
-                <div className="timeline-content">
-                  <div className="flex flex-col items-center">
-                    <div className="w-32 h-32 mb-4">
-                      <img src={mentor.imageUrl} alt={mentor.name} className="w-full h-full rounded-full object-cover" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-center">
-                      <DecryptedText text={mentor.name} animateOn="view" />
-                    </h3>
-                    <p className="text-gray-400 text-center">
-                      <DecryptedText text={mentor.role} animateOn="view" />
-                    </p>
-                    <p className="text-gray-500 mt-2 text-center">
-                      <DecryptedText text={mentor.bio} animateOn="view" />
-                    </p>
-                    <div className="flex mt-4 space-x-4">
-                      <a href={mentor.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                        <i className='bx bxl-linkedin-square text-2xl'></i>
-                      </a>
-                      <a href={mentor.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                        <i className='bx bxl-github text-2xl'></i>
-                      </a>
-                      <a href={mentor.social.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                        <i className='bx bxl-instagram-alt text-2xl'></i>
-                      </a>
-                      <a href={mentor.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                         <i className='bx bxl-twitter text-2xl'></i>
                       </a>
                     </div>
