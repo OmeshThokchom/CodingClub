@@ -4,7 +4,7 @@ import './Orientation.css'; // Assuming you'll create this CSS file
 
 const Orientation = () => {
   return (
-    <section className="orientation-day" id="orientation-day">
+    <section className="orientation-day pt-20" id="orientation-day">
       <div className="orientation-content">
         <h2 className="event-title" data-aos="fade-down">ORIENTATION DAY 2025</h2>
         <p className="event-details" data-aos="fade-right">

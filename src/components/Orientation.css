@@ -1,12 +1,12 @@
 .orientation-day {
-  padding: 2rem 0;
+  padding: 7rem 0;
   text-align: center;
 }
 
 .orientation-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
 .event-title {

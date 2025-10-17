@@ -93,7 +93,7 @@ const teamMembers = [
 
 const About = () => {
   return (
-    <main className="flex lg:mt-20 flex-col items-center justify-between min-h-[calc(90vh-6rem)]">
+    <main className="flex pt-20 flex-col items-center justify-between min-h-[calc(90vh-6rem)]">
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, opacity: 0.3 }}>
         <LaserFlow />
       </div>
