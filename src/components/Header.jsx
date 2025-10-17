@@ -58,7 +58,7 @@ const Header = () => {
                   </Link>      </nav>
 
       <button className="hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-white cursor-pointer z-50">
-        Join The Club{' '}
+        Join The Community{' '}
       </button>
 
       {/* mobile view menu */}
