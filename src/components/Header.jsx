@@ -1,9 +1,9 @@
-import 'boxicons/css/boxicons.min.css';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,15 +20,9 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  // simple function to toggle the mobile menu
-  const toggleMobileMenu = () => {
-    const mibileMenu = document.getElementById('mobileMenu');
 
-    if (mobileMenu.classList.contains('hidden')) {
-      mobileMenu.classList.remove('hidden');
-    } else {
-      mobileMenu.classList.add('hidden');
-    }
+  const toggleMobileMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -40,7 +34,7 @@ const Header = () => {
         data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500"
-        className="text-3x1 md:text-4x1 lg:texxt-5x1 font-light m-0"
+        className="text-3xl md:text-4xl lg:text-5xl font-light m-0"
       >
         CodeHive
       </h1>
@@ -84,17 +78,21 @@ const Header = () => {
 
       {/* mobile view menu */}
 
-      <button onClick={toggleMobileMenu} className="md:hidden text-3x1 p-2 z-50">
-        <i class="bx bx-menu"></i>
+      <button onClick={toggleMobileMenu} className="md:hidden flex flex-col justify-center items-center w-8 h-8 z-50">
+        <div className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></div>
+        <div className={`w-6 h-0.5 bg-white my-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></div>
+        <div className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
       </button>
 
       {/* mobile menu hidden by default */}
 
       <div
         id="mobileMenu"
-        className="hidden fixed top-0 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur- md"
+        className={`fixed top-0 bottom-0 right-0 w-64 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur-md transition-transform duration-300 ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
-        <nav className="flex flex-col gap-6 items-center">
+        <nav className="flex flex-col gap-6 items-center mt-16">
           <Link
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
             to="/"

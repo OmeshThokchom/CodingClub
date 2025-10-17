@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline';
 const hero = () => {
   return (
     <main className="flex pt-20 flex-col lg:flex-row items-centre justify-between min-h-[calc(90vh-6rem)]">
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-xl ml-[5%] z-10 mt-[90%] md:mt-[60%] lg:mt-0">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="max-w-xl ml-[5%] z-10 lg:mt-0">
             <div className='relative w-[95%] sm:w-48 h-10 bg-gradient-to-r from-[#656565] to-[#e99b63] shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-full'>
                 <div className='absolute inset-[3px] bg-black rounded-full flex items-center justify-center gap-1' >
                     <i class='bx bx-diamond'></i>CODE HIVE
@@ -12,7 +12,7 @@ const hero = () => {
                 </div>
             </div>
 
-            <h1 className='text-3xl sm:text-4x1 md:text-5x1 lg:text-6xl font-semibold tracking-wider my-8'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider my-8'>
               CODE HIVE
             </h1>
             <p className='text-base sm:text-lg tracking-wider text-gray-400 max-w-[25rem] lg:max-w-[30rem]'>
@@ -33,7 +33,7 @@ const hero = () => {
             </div>
         </div>
 
-        <Spline data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" className='absolute lg:top-0 top-[-20%] h-full' scene="https://prod.spline.design/Qy3jSIZm8GWiJJhi/scene.splinecode" />
+        <Spline data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" className='absolute lg:top-0 top-[-10%] h-full w-full z-0' scene="https://prod.spline.design/Qy3jSIZm8GWiJJhi/scene.splinecode" />
 
         
     </main>
